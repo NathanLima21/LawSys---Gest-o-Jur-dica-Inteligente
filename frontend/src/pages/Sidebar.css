@@ -1,0 +1,49 @@
+/* No seu CSS global ou App.css */
+.dashboard-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 260px; /* IMPORTANTE: Tem que ser o mesmo width da Sidebar */
+  background-color: #f8fafc;
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative; /* Garante que o conteúdo não 'suba' na sidebar */
+}
+
+.btn-logout {
+  margin-top: auto; /* Mantém no final da sidebar */
+  background-color: transparent;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  
+  /* Transição suave para todos os efeitos */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* O Efeito ao passar o mouse (Hover) */
+.btn-logout:hover {
+  background-color: #ef4444; /* Fica vermelho */
+  color: white; /* Letra fica branca */
+  transform: translateY(-2px); /* Sobe um pouquinho */
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4); /* Brilho vermelho embaixo */
+}
+
+/* Efeito de clique (Active) */
+.btn-logout:active {
+  transform: translateY(0); /* Volta ao normal quando clica */
+  filter: brightness(0.8); /* Dá uma escurecida rápida */
+}

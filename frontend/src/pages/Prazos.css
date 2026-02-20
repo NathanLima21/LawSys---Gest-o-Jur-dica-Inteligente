@@ -1,0 +1,112 @@
+.btn-add-prazo {
+  background-color: #f59e0b; /* Amarelo/Laranja para diferenciar de processos */
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+}
+
+.btn-add-prazo:hover {
+  background-color: #d97706;
+  transform: translateY(-2px);
+}
+
+.date-cell strong {
+  color: #1e293b;
+  font-size: 1rem;
+}
+
+.proc-link {
+  color: #0052FF;
+  font-size: 0.85rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Tags de Prioridade */
+.priority-tag {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.priority-tag.ALTA {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.priority-tag.MEDIA {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.priority-tag.BAIXA {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+/* Botão de Concluir */
+.btn-done {
+  background: #dcfce7;
+  color: #15803d;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.btn-done:hover {
+  background: #22c55e;
+  color: white;
+}
+
+/* No seu Prazos.css, verifique ou adicione: */
+
+.btn-add {
+  background-color: #2563eb; /* Azul padrão */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-add:hover {
+  background-color: #1d4ed8;
+}
+
+/* Badge de Urgente/Pendente */
+.status-badge.urgente {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.status-badge.pendente {
+  background: #fef9c3;
+  color: #a16207;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #94a3b8;
+}
+
+.empty-state span {
+  font-size: 3rem;
+}
+
+.prazos-container {
+  width: 100%;
+  max-width: 1200px;
+  animation: fadeIn 0.4s ease;
+}

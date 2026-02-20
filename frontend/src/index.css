@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  /* Não definimos background aqui para não conflitar com as classes do App.tsx */
+}
+
+/* RESET DE LINKS: O fim dos links roxos/azuis da image_a6d4ca.png */
+a {
+  text-decoration: none !important;
+  color: inherit !important; /* Força o link a herdar a cor do pai (branco na home, preto no sistema) */
+  transition: all 0.2s ease;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+  background: transparent !important; /* Garantia de que o root nunca será branco */
+}
+
+/* Estilos de botões para manter a consistência premium */
+button {
+  cursor: pointer;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  background: none;
+  color: inherit;
+}
+
+input {
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+/* Scrollbar elegante que não "empurra" o layout da Home */
+::-webkit-scrollbar { 
+  width: 6px; 
+}
+
+::-webkit-scrollbar-track { 
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Estilização para quando a barra estiver sobre fundo escuro (Home) */
+body.home-active::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}

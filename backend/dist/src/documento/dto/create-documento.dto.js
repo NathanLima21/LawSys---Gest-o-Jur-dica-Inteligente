@@ -1,0 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CreateDocumentoDto = void 0;
+class CreateDocumentoDto {
+    nome;
+    processoId;
+}
+exports.CreateDocumentoDto = CreateDocumentoDto;
+//# sourceMappingURL=create-documento.dto.js.map
