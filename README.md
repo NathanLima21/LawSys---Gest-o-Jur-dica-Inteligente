@@ -1,6 +1,3 @@
-Com certeza, Doutor! Um projeto de advocacia merece uma apresentação à altura — algo que passe confiança, organização e profissionalismo.
-
-Como você está usando o padrão de pastas separadas, preparei este README.md focado na estrutura de Monorepo. Pode copiar e colar na raiz do seu projeto:
 
 ⚖️ LawSys - Gestão Jurídica Inteligente
 LawSys é uma plataforma completa desenvolvida para modernizar a rotina de escritórios de advocacia. O sistema centraliza a gestão de processos, controle de prazos com alertas em tempo real, fluxo financeiro detalhado e armazenamento seguro de documentos.
